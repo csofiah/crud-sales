@@ -2,12 +2,14 @@ package com.company.services.category;
 
 import com.company.model.Category;
 import com.company.repo.category.CategoryRepo;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class CategoryService {
 
-    private CategoryRepo repo = new CategoryRepo();
+    private CategoryRepo repo;
 
     public void saveExpress(Category category) {
 
